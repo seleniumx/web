@@ -1,0 +1,303 @@
+body{
+    color: #08376b;
+}
+
+.sx_navbar{
+  background: #ffffff;
+  background: -moz-linear-gradient(top, #ffffff 0%, #ffffff 90%, #efefef 100%);
+  background: -webkit-linear-gradient(top, #ffffff 0%,#ffffff 90%,#efefef 100%);
+  background: linear-gradient(to bottom, #ffffff 0%,#ffffff 90%,#efefef 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#eaeaea',GradientType=0 );
+  border-bottom: medium solid #9db4cc;
+
+}
+
+.sx_maincontainer{
+  margin-top: 60px;
+  margin-bottom: 20px;
+}
+
+.sx_verscontainer{
+  /* border-left: thin solid #9db4cc; */
+}
+
+.sx_subtitle{
+  color: #0e5db5;/*0e5db5*/
+}
+
+.sx_versionsb{
+  font-size: 16px;
+  border-bottom:thin solid #9db4cc;
+  width: 80%;
+  padding-bottom: 5px;
+  margin-bottom: 15px;
+
+}
+
+.sx_versioncontent{
+  font-size: 13px;
+  margin-bottom: 50px;
+  /* padding-left: 10px; */
+}
+
+.sx_versioncontent .sx_vrnewsl{
+  font-weight: bold;
+}
+
+.sx_versioncontent .sx_vrnew{
+  margin-left: 10px;
+}
+
+ul{
+  padding-left: 18px;
+}
+li{
+  padding: 2px;
+}
+a{
+  color: #175aa5;
+}
+.sx_contcontainer{
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+p{
+  text-align: justify;
+  font-size: 13px;
+}
+.sx_conttitle{
+  /* font-weight: bold; */
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+.sx_oslogo{
+  margin-left: 25px;
+}
+
+.sx_conttop{
+  margin-top: 40px;
+  font-size: 16px;
+}
+
+.sx_contsb{
+  font-weight: bold;
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+.sx_codeseg{
+  background-color: #eee;
+  border: thin solid #ccc;
+  margin-top: 20px;
+  font-size: 14px
+}
+
+.affix{
+  text-align: center;
+  padding:0px 20px;
+  -webkit-transition:padding 0.2s linear;
+  -moz-transition:padding 0.2s linear;
+  -o-transition:padding 0.2s linear;
+  transition:padding 0.2s linear;
+}
+
+.affix2{
+  text-align: center;
+  padding:15px 20px;
+  -webkit-transition:padding 0.2s linear;
+  -moz-transition:padding 0.2s linear;
+  -o-transition:padding 0.2s linear;
+  transition:padding 0.2s linear;
+}
+.sx_contli{
+  font-size:13px;
+}
+.sx_footer{
+  text-align: center;
+  border-top: thin solid #9db4cc;
+  height: 25px;
+  padding-top: 5px;
+  font-size: 12px;
+  margin-top: 10px;
+}
+@media (min-width: 992px) {
+  .sx_maincontainer{
+    margin-top: 60px;
+    margin-bottom: 20px;
+  }
+
+  .sx_versionsb{
+    font-size: 16px;
+    border-bottom:thin solid #9db4cc;
+    width: 80%;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+
+  }
+
+  .sx_versioncontent{
+    font-size: 13px;
+    /* padding-left: 10px; */
+  }
+
+  .sx_versioncontent .sx_vrnewsl{
+    font-weight: bold;
+  }
+
+  .sx_versioncontent .sx_vrnew{
+    margin-left: 10px;
+  }
+
+  ul{
+    padding-left: 18px;
+  }
+  li{
+    padding: 2px;
+  }
+  a{
+    color: #175aa5;
+  }
+  .sx_contcontainer{
+    padding-left: 60px;
+    padding-right: 80px;
+  }
+
+  p{
+    text-align: justify;
+    font-size: 15px;
+  }
+  .sx_conttitle{
+    /* font-weight: bold; */
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  .sx_oslogo{
+    margin-left: 25px;
+  }
+
+  .sx_conttop{
+    margin-top: 60px;
+  }
+
+  .sx_contsb{
+    font-weight: bold;
+    margin-top: 25px;
+  }
+
+  .sx_codeseg{
+    background-color: #eee;
+    border: thin solid #ccc;
+    margin-top: 20px;
+  }
+
+  .affix{
+    padding:10px 40px;
+    -webkit-transition:padding 0.2s linear;
+    -moz-transition:padding 0.2s linear;
+    -o-transition:padding 0.2s linear;
+    transition:padding 0.2s linear;
+  }
+
+  .affix2{
+    padding:15px 55px;
+    -webkit-transition:padding 0.2s linear;
+    -moz-transition:padding 0.2s linear;
+    -o-transition:padding 0.2s linear;
+    transition:padding 0.2s linear;
+  }
+  .sx_contli{
+    font-size:15px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .sx_maincontainer{
+    margin-top: 60px;
+    margin-bottom: 20px;
+  }
+
+  .sx_versionsb{
+    font-size: 16px;
+    border-bottom:thin solid #9db4cc;
+    width: 80%;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+
+  }
+
+  .sx_versioncontent{
+    font-size: 13px;
+    /* padding-left: 10px; */
+  }
+
+  .sx_versioncontent .sx_vrnewsl{
+    font-weight: bold;
+  }
+
+  .sx_versioncontent .sx_vrnew{
+    margin-left: 10px;
+  }
+
+  ul{
+    padding-left: 18px;
+  }
+  li{
+    padding: 2px;
+  }
+  a{
+    color: #175aa5;
+  }
+  .sx_contcontainer{
+    padding-left: 100px;
+    padding-right: 130px;
+  }
+
+  p{
+    text-align: justify;
+    font-size: 15px;
+  }
+  .sx_conttitle{
+    /* font-weight: bold; */
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  .sx_oslogo{
+    margin-left: 25px;
+  }
+
+  .sx_conttop{
+    margin-top: 60px;
+  }
+
+  .sx_contsb{
+    font-weight: bold;
+    margin-top: 25px;
+  }
+
+  .sx_codeseg{
+    background-color: #eee;
+    border: thin solid #ccc;
+    margin-top: 20px;
+  }
+
+  .affix{
+    padding:10px 40px;
+    -webkit-transition:padding 0.2s linear;
+    -moz-transition:padding 0.2s linear;
+    -o-transition:padding 0.2s linear;
+    transition:padding 0.2s linear;
+  }
+
+  .affix2{
+    padding:15px 75px;
+    -webkit-transition:padding 0.2s linear;
+    -moz-transition:padding 0.2s linear;
+    -o-transition:padding 0.2s linear;
+    transition:padding 0.2s linear;
+  }
+  .sx_contli{
+    font-size:15px;
+  }
+
+}

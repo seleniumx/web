@@ -1,0 +1,164 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="./styles/bootstrap.min.css" >
+  <link rel="stylesheet" href="./styles/sx_custom.css" >
+  <script src="./scripts/jquery-3.3.1.slim.min.js"></script>
+  <script src="./scripts/popper.min.js"></script>
+  <script src="./scripts/bootstrap.min.js"></script>
+  <script>
+  $(document).ready(function(){
+    var top = $(".sx_main").offset().top;
+
+  	// bind and scroll header div
+    console.log("h");
+  	$(window).on("scroll", function() {
+  		//$(".affix").css('height',$(".sx_main" ).width());
+
+        if($(window).scrollTop()>top){
+          $(".sx_navbar").removeClass("affix2");
+          $(".sx_navbar").addClass("affix");
+        }
+        else {
+          $(".sx_navbar").addClass("affix2");
+          $(".sx_navbar").removeClass("affix");
+        }
+  	});
+  });
+  </script>
+
+  <title>SeleniumX</title>
+</head>
+<body>
+<div class="sx_main">
+  <nav class="navbar navbar-light bg-light sx_navbar sticky-top affix2" data-spy="affix">
+    <a class="navbar-brand" href="#">
+      <img src="./images/SeleniumX_logo.png" width="230" height="40" class="d-inline-block align-top" alt="">
+    </a>
+  </nav>
+  <div class="container-fluid sx_maincontainer">
+    <div class="row justify-content-md-center">
+      <div class="col col-lg-9 col col-md-8 col-sm-12 sx_contcontainer">
+        <div class="sx_subtitle sx_conttitle">
+          Welcome to SeleniumX
+        </div>
+        <p>
+          SeleniumX is a test automation framework developed based on Selenium. QA/Automation Engineers who are developing automated test cases more familiar with selenium functionalities and features. But it is hard to follow a common framework who can understand and used by every team member. As a solution, we developed a common framework that is no need to build from scratch, but also the frame implemented for you. You don’t have to worry about what kind of OS you are using or what kind of browser type you using because of each and every component built-in with SeleniumX. You just need to call an annotation and that’s all. All the things will be done by SeleniumX for you.
+        </p>
+        <div class="d-block d-sm-block d-md-none d-lg-none">
+          <a href="https://github.com/seleniumx/seleniumx" ><div class="sx_vrnew" style="margin-left:0px;font-size:13px;">Go to Source >></div></a>
+        </div>
+        <div class="d-block d-sm-block d-md-none d-lg-none">
+          <div class="sx_subtitle sx_conttitle sx_conttop">
+            OS Support
+          </div>
+          <div class="sx_versioncontent">
+            <img src="./images/macos_logo.png" width="70px" height="70px" alt="MacOS"/>
+            <img src="./images/windows_logo.png" width="50px" height="50px" alt="Windows" class="sx_oslogo"/>
+            <img src="./images/linux_logo.png" width="60px" height="60px" alt="Linux" class="sx_oslogo"/>
+          </div>
+        </div>
+        <div class="sx_subtitle sx_conttitle sx_conttop">
+          SeleniumX 1.0-SNAPSHOT
+        </div>
+        <div class="sx_contsb">
+          Maven Dependencies
+        </div>
+        <div class="sx_codeseg">
+          <pre>
+          <code>
+  &lt;dependency&gt;
+    &lt;groupId&gt; org.seleniumx &lt;/groupId&gt;
+    &lt;artifactId&gt; seleniumx &lt;/artifactId&gt;
+    &lt;version&gt; 1.0-SNAPSHOT &lt;/version&gt;
+    &lt;classifier&gt; jar-with-dependencies &lt;/classifier&gt;
+  &lt;/dependency&gt;</code></pre>
+        </div>
+        <div class="sx_contsb" style="margin-bottom:12px;">
+          Steps to implement the framework with your test environment
+        </div>
+        <div class="sx_contli" >
+          <ul>
+            <li>Extend the Start class with tour test case class.</li>
+            <li>Implement the annotation and give parameters accordingly.</li>
+          </ul>
+          <div>E.g:</div>
+          <div class="sx_codeseg">
+            <pre>
+            <code>
+  public class TestClass extends Driver {
+      @DriverSettings
+      @Test
+      public static void sdsf() {
+
+      }
+  }</code></pre>
+          </div>
+        </div>
+        <div class="sx_contsb" style="margin-bottom:12px;">
+          Supported Annotations
+        </div>
+        <div class="sx_contli">
+          <ul>
+            <li>@DriverSettings Put the annotation before the method declaration. </li>
+          </ul>
+        </div>
+        <div>E.g:</div>
+        <div class="sx_codeseg">
+          <pre>
+          <code>
+  @DriverSettings(
+      OS = Set.OS.LINUX,
+      WINDOW_SIZE = Set.WINDOW_SIZE.DEFAULT,
+      BASE_URL = "https://www.samplewebsite.com",
+      IMPLICIT_WAIT = 100
+  )</code></pre>
+        </div>
+        <div class="d-block d-sm-block d-md-none d-lg-none" style="border-top:thin solid #9db4cc;margin-top:20px;">
+          <div class="sx_subtitle sx_conttitle sx_conttop" style="margin-top:10">
+            Releases
+          </div>
+          <div class="sx_versioncontent">
+            <ul>
+              <a href="#" ><li class="sx_vrnew">SeleniumX 1.1</li></a>
+              <a href="#" ><li class="sx_vrnew">SeleniumX 1.0.2</li></a>
+              <a href="#" ><li class="sx_vrnew">SeleniumX 1.0.1</li></a>
+              <a href="#" ><li class="sx_vrnewsl">SeleniumX 1.0-SNAPSHOT</li></a>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- *************************************************** -->
+      <div class="col col-lg-3 col-md-4 d-none d-sm-none d-md-block sx_verscontainer">
+        <div class="sx_subtitle sx_versionsb">Releases</div>
+        <div class="sx_versioncontent">
+          <ul>
+            <a href="#" ><li class="sx_vrnew">SeleniumX 1.1</li></a>
+            <a href="#" ><li class="sx_vrnew">SeleniumX 1.0.2</li></a>
+            <a href="#" ><li class="sx_vrnew">SeleniumX 1.0.1</li></a>
+            <a href="#" ><li class="sx_vrnewsl">SeleniumX 1.0-SNAPSHOT</li></a>
+          </ul>
+        </div>
+        <div class="sx_subtitle sx_versionsb" style="margin-top:40px;">OS Support</div>
+        <div class="sx_versioncontent">
+          <img src="./images/macos_logo.png" width="70px" height="70px" alt="MacOS"/>
+          <img src="./images/windows_logo.png" width="50px" height="50px" alt="Windows" class="sx_oslogo"/>
+          <img src="./images/linux_logo.png" width="60px" height="60px" alt="Linux" class="sx_oslogo"/>
+        </div>
+        <div class="sx_subtitle sx_versionsb" style="margin-top:50px;">Source</div>
+        <div class="sx_versioncontent">
+          <ul>
+            <a href="https://github.com/seleniumx/seleniumx" ><div class="sx_vrnew" style="margin-left:-15px;font-size:13px;">https://github.com/seleniumx/seleniumx</div></a>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="sx_footer">
+      Copyright &copy; 2018 hasitharajapakse
+    </div>
+  </div>
+</div>
+</body>
+</html>
