@@ -58,19 +58,296 @@
         <p>
           SeleniumX is a test automation framework developed based on Selenium. QA/Automation Engineers who are developing automated test cases more familiar with selenium functionalities and features. But it is hard to follow a common framework who can understand and used by every team member. As a solution, we developed a common framework that is no need to build from scratch, but also the frame implemented for you. You don’t have to worry about what kind of OS you are using or what kind of browser type you using because of each and every component built-in with SeleniumX. You just need to call an annotation and that’s all. All the things will be done by SeleniumX for you.
         </p>
+        <div class="container sx_flowchart_cont d-none d-sm-none d-md-none d-lg-block">
+          <div class="row justify-content-md-center">
+            <div class="col col-lg-3 d-flex justify-content-center sx_flowchart_item">
+              <div class="sx_fc_item_inner" style="background-color:#E8E8E8">
+                <div class="sx_sc_connector" ></div>
+                <div class="sx_fci_title" style="padding-top:13px;">
+                  PreconditionClass()
+                </div>
+                <div class="sx_fci_content">
+                  <div class="sx_fci_cont_inner">
+                    <b>Preconditions</b><br>
+                    <ul style="padding-top:10px">
+                      <li>Another test case</li>
+                      <li>Custom test script</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col col-lg-3 d-flex justify-content-center sx_flowchart_item">
+              <div class="sx_fc_item_inner" style="background-color:#E1E6EB">
+                <div class="sx_sc_connector" id="sx_sc_connector1">@Precondition</div>
+                <div class="sx_fci_title">
+                  <span class="sx_fci_subtitle">extends TestCase()</span>
+                  SampleTestCase()
+                </div>
+                <div class="sx_fci_content" style="text-align:center;padding-left:0px;font-size: 12px;">
+                  <div class="sx_fci_cont_inner">
+                    @Override method<br>
+                    <b>testcase()</b><br>
+                    <div style="padding:7px;"></div>
+                    <u>Put Test data</u><br>
+                    <!-- <div style="border-bottom: thin solid #0e5db5;width:80px;transform:translate(40%,0%)"></div> -->
+                    data.put("name","Jack")<br>
+                    <div style="padding:3px;"></div>
+                    <u>Bind Test data</u><br>
+                    <!-- <div style="border-bottom: thin solid #0e5db5;width:80px;transform:translate(40%,0%)"></div> -->
+                    testCase(data)
+                  </div>
+                </div>
+                <div class="sx_fci_footer" >
+                  Driver Config annotation @DriverSettings
+                </div>
+              </div>
+            </div>
+            <div class="col col-lg-3 d-flex justify-content-center sx_flowchart_item">
+              <div class="sx_fc_item_inner" style="background-color:#E1E8F0">
+                <div class="sx_sc_connector" id="sx_sc_connector2">@Script</div>
+                <div class="sx_fci_title">
+                  <span class="sx_fci_subtitle">extends Script()</span>
+                  SampleScriptClass()
+                </div>
+                <div class="sx_fci_content" style="text-align:center;padding-left:0px;font-size: 12px;">
+                  <div class="sx_fci_cont_inner">
+                    @Override method<br>
+                    <b>script()</b><br>
+                    <div style="padding:7px;"></div>
+                    <u>Get Test data</u><br>
+                    <!-- <div style="border-bottom: thin solid #0e5db5;width:100px;transform:translate(50%,0%)"></div> -->
+                    data.get("name")<br>
+                    <div style="padding:3px;"></div>
+                    *This will return "Jack"
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col col-lg-3 d-flex justify-content-center sx_flowchart_item">
+              <div class="sx_fc_item_inner" style="background-color:#EBEBFF">
+                <div class="sx_sc_connector" id="sx_sc_connector3">@Page</div>
+                <div class="sx_fci_title">
+                  <span class="sx_fci_subtitle">extends Page()</span>
+                  SamplePageClass()
+                </div>
+                <div class="sx_fci_content" style="text-align:center;padding-left:0px;font-size: 12px;">
+                  <div class="sx_fci_cont_inner">
+                    @Override method<br>
+                    <b>page()</b><br>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- ********************** -->
+        <div class="container sx_flowchart_cont d-none d-sm-block d-md-block d-lg-none">
+          <div class="row justify-content-md-center">
+            <div class="col col-md-6 col-sm-6 d-flex justify-content-center sx_flowchart_item">
+              <div class="sx_fc_item_inner" style="background-color:#E8E8E8" id="sx_fc_item1">
+                <div class="sx_sc_connector" ></div>
+                <div class="sx_fci_title" >
+                  PreconditionClass()
+                </div>
+                <div class="sx_fci_content">
+                  <div class="sx_fci_cont_inner">
+                    <b>Preconditions</b><br>
+                    <ul style="padding-top:10px">
+                      <li>Another test case</li>
+                      <li>Custom test script</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col col-md-6 col-sm-6 d-flex justify-content-center sx_flowchart_item">
+              <div class="sx_fc_item_inner" style="background-color:#E1E6EB" id="sx_fc_item2">
+                <div class="sx_sc_connector" id="sx_sc_connector1">@Precondition</div>
+                <div class="sx_fci_title">
+                  <span class="sx_fci_subtitle">extends TestCase()</span>
+                  SampleTestCase()
+                </div>
+                <div class="sx_fci_content" style="text-align:center;padding-left:0px;font-size: 12px;">
+                  <div class="sx_fci_cont_inner">
+                    @Override method<br>
+                    <b>testcase()</b><br>
+                    <div style="padding:7px;"></div>
+                    Put Test data
+                    <div style="border-bottom: thin solid #0e5db5;width:100px;transform:translate(50%,0%)"></div>
+                    data.put("name","Jack")<br>
+                    <div style="padding:3px;"></div>
+                    Bind Test data
+                    <div style="border-bottom: thin solid #0e5db5;width:100px;transform:translate(50%,0%)"></div>
+                    testCase(data)
+                  </div>
+                </div>
+                <div class="sx_fci_footer" >
+                  Driver Config annotation @DriverSettings
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row justify-content-md-center">
+            <div class="col col-md-6 col-sm-6 d-flex justify-content-center sx_flowchart_item">
+              <div class="sx_fc_item_inner" style="background-color:#EBEBFF" id="sx_fc_item3">
+                <div class="sx_sc_connector" ></div>
+                <div class="sx_fci_title">
+                  <span class="sx_fci_subtitle">extends Page()</span>
+                  SamplePageClass()
+                </div>
+                <div class="sx_fci_content" style="text-align:center;padding-left:0px;font-size: 12px;">
+                  <div class="sx_fci_cont_inner">
+                    @Override method<br>
+                    <b>page()</b><br>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col col-md-6 col-sm-6 d-flex justify-content-center sx_flowchart_item">
+              <div class="sx_fc_item_inner" style="background-color:#E1E8F0" id="sx_fc_item4">
+                <div class="sx_sc_connector" id="sx_sc_connector3">@Page</div>
+                <div class="sx_sc_connector" id="sx_sc_connector2">@Script</div>
+                <div class="sx_fci_title" style="transform:translate(0%,-150px);padding-top:31px;">
+                  <span class="sx_fci_subtitle">extends Script()</span>
+                  SampleScriptClass()
+                </div>
+                <div class="sx_fci_content" style="text-align:center;padding-left:0px;font-size: 12px;transform:translate(0%,-150px);">
+                  <div class="sx_fci_cont_inner">
+                    @Override method<br>
+                    <b>script()</b><br>
+                    <div style="padding:7px;"></div>
+                    <u>Get Test data</u><br>
+                    <!-- <div style="border-bottom: thin solid #0e5db5;width:100px;transform:translate(50%,0%)"></div> -->
+                    data.get("name")<br>
+                    <div style="padding:3px;"></div>
+                    *This will return "Jack"
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- ********************* -->
+        <div class="container sx_flowchart_cont d-block d-sm-none d-md-none d-lg-none">
+            <div class="sx_flowchart_item d-flex justify-content-center">
+              <div class="sx_fc_item_inner" style="background-color:#E8E8E8">
+                <div class="sx_sc_connector" id="sx_sc_connector1">@Precondition</div>
+                <div class="sx_fci_title" style="padding-top:23px;">
+                  PreconditionClass()
+                </div>
+                <div class="sx_fci_content">
+                  <div class="sx_fci_cont_inner">
+                    <b>Preconditions</b><br>
+                    <ul style="padding-top:10px">
+                      <li>Another test case</li>
+                      <li>Custom test script</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="sx_flowchart_item d-flex justify-content-center">
+              <div class="sx_fc_item_inner" style="background-color:#E1E6EB">
+                <div class="sx_sc_connector" id="sx_sc_connector2">@Script</div>
+                <div class="sx_fci_title">
+                  <span class="sx_fci_subtitle">extends TestCase()</span>
+                  SampleTestCase()
+                </div>
+                <div class="sx_fci_content" style="text-align:center;padding-left:0px;font-size: 12px;">
+                  <div class="sx_fci_cont_inner">
+                    @Override method<br>
+                    <b>testcase()</b><br>
+                    <div style="padding:7px;"></div>
+                    <u>Put Test data</u><br>
+                    <!-- <div style="border-bottom: thin solid #0e5db5;width:80px;transform:translate(40%,0%)"></div> -->
+                    data.put("name","Jack")<br>
+                    <div style="padding:3px;"></div>
+                    <u>Bind Test data</u><br>
+                    <!-- <div style="border-bottom: thin solid #0e5db5;width:80px;transform:translate(40%,0%)"></div> -->
+                    testCase(data)
+                  </div>
+                </div>
+                <div class="sx_fci_footer" >
+                  Driver Config annotation @DriverSettings
+                </div>
+              </div>
+            </div>
+            <div class="sx_flowchart_item d-flex justify-content-center">
+              <div class="sx_fc_item_inner" style="background-color:#E1E8F0">
+                <div class="sx_sc_connector" id="sx_sc_connector3">@Page</div>
+                <div class="sx_fci_title">
+                  <span class="sx_fci_subtitle">extends Script()</span>
+                  SampleScriptClass()
+                </div>
+                <div class="sx_fci_content" style="text-align:center;padding-left:0px;font-size: 12px;">
+                  <div class="sx_fci_cont_inner">
+                    @Override method<br>
+                    <b>script()</b><br>
+                    <div style="padding:7px;"></div>
+                    <u>Get Test data</u><br>
+                    <!-- <div style="border-bottom: thin solid #0e5db5;width:100px;transform:translate(50%,0%)"></div> -->
+                    data.get("name")<br>
+                    <div style="padding:3px;"></div>
+                    *This will return "Jack"
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="sx_flowchart_item d-flex justify-content-center">
+              <div class="sx_fc_item_inner" style="background-color:#EBEBFF">
+                <div class="sx_sc_connector"></div>
+                <div class="sx_fci_title">
+                  <span class="sx_fci_subtitle">extends Page()</span>
+                  SamplePageClass()
+                </div>
+                <div class="sx_fci_content" style="text-align:center;padding-left:0px;font-size: 12px;">
+                  <div class="sx_fci_cont_inner">
+                    @Override method<br>
+                    <b>page()</b><br>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+        <!-- ********************* -->
         <div class="d-block d-sm-block d-md-none d-lg-none">
           <a href="https://github.com/seleniumx/seleniumx" ><div class="sx_vrnew" style="margin-left:0px;font-size:13px;">Go to Source >></div></a>
+        </div>
+        <div class="d-block d-sm-block d-md-none d-lg-none">
+          <div class="sx_subtitle sx_conttitle sx_conttop">Requirements</div>
+          <div class="sx_versioncontent">
+            <ul>
+              <a href="https://www.java.com/en/download/" target="_blank" >
+                <li class="sx_vrnew">Java</li>
+              </a>
+              <a href="https://maven.apache.org/download.cgi" target="_blank">
+                <li class="sx_vrnew">Apache Maven</li>
+              </a>
+            </ul>
+          </div>
         </div>
         <div class="d-block d-sm-block d-md-none d-lg-none">
           <div class="sx_subtitle sx_conttitle sx_conttop">
             OS Support
           </div>
           <div class="sx_versioncontent">
-            <img src="./images/macos_logo.png" width="70px" height="70px" alt="MacOS"/>
-            <img src="./images/windows_logo.png" width="50px" height="50px" alt="Windows" class="sx_oslogo"/>
-            <img src="./images/linux_logo.png" width="60px" height="60px" alt="Linux" class="sx_oslogo"/>
+            <img src="./images/macos_logo.png" width="60px" height="60px" alt="MacOS"/>
+            <img src="./images/windows_logo.png" width="40px" height="40px" alt="Windows" class="sx_oslogo"/>
+            <img src="./images/linux_logo.png" width="50px" height="50px" alt="Linux" class="sx_oslogo"/>
           </div>
         </div>
+        <div class="d-block d-sm-block d-md-none d-lg-none">
+          <div class="sx_subtitle sx_conttitle sx_conttop">
+            Browser Support
+          </div>
+          <div class="sx_versioncontent">
+            <img src="./images/chrome_logo.png" width="50px" height="50px" alt="Chrome"/>
+            <img src="./images/firefox_logo.png" width="50px" height="50px" alt="Firefox" class="sx_oslogo"/>
+            <img src="./images/ie_logo.png" width="50px" height="50px" alt="IE" class="sx_oslogo"/>
+          </div>
+        </div>
+        <br>
         <div class="sx_subtitle sx_conttitle sx_conttop">
           SeleniumX 1.0-SNAPSHOT
         </div>
@@ -153,16 +430,33 @@
             <a href="#" ><li class="sx_vrnewsl">SeleniumX 1.0-SNAPSHOT</li></a>
           </ul>
         </div>
-        <div class="sx_subtitle sx_versionsb" style="margin-top:40px;">OS Support</div>
-        <div class="sx_versioncontent">
-          <img src="./images/macos_logo.png" width="70px" height="70px" alt="MacOS"/>
-          <img src="./images/windows_logo.png" width="50px" height="50px" alt="Windows" class="sx_oslogo"/>
-          <img src="./images/linux_logo.png" width="60px" height="60px" alt="Linux" class="sx_oslogo"/>
-        </div>
-        <div class="sx_subtitle sx_versionsb" style="margin-top:50px;">Source</div>
+        <div class="sx_subtitle sx_versionsb">Requirements</div>
         <div class="sx_versioncontent">
           <ul>
-            <a href="https://github.com/seleniumx/seleniumx" ><div class="sx_vrnew" style="margin-left:-15px;font-size:13px;">https://github.com/seleniumx/seleniumx</div></a>
+            <a href="https://www.java.com/en/download/" target="_blank" >
+              <li class="sx_vrnew">Java</li>
+            </a>
+            <a href="https://maven.apache.org/download.cgi" target="_blank" >
+              <li class="sx_vrnew">Apache Maven</li>
+            </a>
+          </ul>
+        </div>
+        <div class="sx_subtitle sx_versionsb" style="margin-top:30px;">OS Support</div>
+        <div class="sx_versioncontent">
+          <img src="./images/macos_logo.png" width="60px" height="60px" alt="MacOS"/>
+          <img src="./images/windows_logo.png" width="40px" height="40px" alt="Windows" class="sx_oslogo"/>
+          <img src="./images/linux_logo.png" width="50px" height="50px" alt="Linux" class="sx_oslogo"/>
+        </div>
+        <div class="sx_subtitle sx_versionsb" style="margin-top:30px;">Browser Support</div>
+        <div class="sx_versioncontent">
+          <img src="./images/chrome_logo.png" width="50px" height="50px" alt="Chrome"/>
+          <img src="./images/firefox_logo.png" width="50px" height="50px" alt="Firefox" class="sx_oslogo"/>
+          <img src="./images/ie_logo.png" width="50px" height="50px" alt="IE" class="sx_oslogo"/>
+        </div>
+        <div class="sx_subtitle sx_versionsb" style="margin-top:30px;">Source</div>
+        <div class="sx_versioncontent" id="sx_source">
+          <ul>
+            <a href="https://github.com/seleniumx/seleniumx" ><div class="sx_vrnew" id="sx_vrnew_source" >https://github.com/seleniumx/seleniumx</div></a>
           </ul>
         </div>
       </div>
